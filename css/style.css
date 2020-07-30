@@ -1,0 +1,110 @@
+/*
+Module : style.css
+WebApp Code Name : kcalmeter
+Date: 14-11-2019
+Author : Fabrizio Del Tufo
+Last Upd : 15 June 2020
+*/
+
+body{font-family: Helvetica; font-size: 14px; text-align: center; color: white; background-color: #514E4E}
+a{color: #000;}
+a:hover{color: #fff; text-decoration-line: none; }
+
+footer{display: flex; justify-content: space-between;}
+h2{font-size: 30px; font-weight: bold;}
+th{color: #fff; background-color: #3572a0;}
+td{color: #fff;}
+table{background-color: #4d4f4a;}
+.tit{color: #fff; background-color: #3572a0; border: 2px solid #fff; }
+
+
+
+/* HEADER */
+.header{width: 100%; height:auto; border: 0px solid red;}
+
+/* HEADER - COVER IMAGE */
+.header img{ width: 100%; height: auto; border: 0px solid green;}
+.astro{width: 100%; color: black; background-color: white; }
+
+
+/* MAIN MENU  */
+.nav-item{padding : 0px 10px;}
+
+/* HERO SECTION  */
+.hero{display: flex; justify-content: space-between; width: 100%; height: auto; border: 0px solid white; padding: 20px;}
+
+/* BOX INSTRUCTIONS DESKTOP */
+.box-info{width: 45%; margin: 0px auto; text-align: left; border: 1px solid #000; padding: 20px;}
+
+/* BOX VIDEO DESKTOP */
+.box-video{width: 45%; margin: 0px auto; text-align: center; border: 1px solid #000; padding: 20px;}
+.videoYT{position: relative;width: 100%;padding-bottom: 56.25%;height: 0px;}
+.videoYT iframe{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+.start-button{margin: 10px auto; padding: 10px; background-color: #343A40; text-align: center; border: 0px solid green; }
+.modal{ color: #000;}
+
+#footer-logo{width: 200px; height:200px; padding: 10px; margin: auto; border: 0px solid white;}
+#footer-text{width: 100%; text-align: left; padding: 10px; margin: auto; font-style: normal; border: 0 solid white;}
+#footer-lan{padding-top: 10px; width: 200px; border: 0 solid white;}
+
+#footer-login{padding: 20px; margin-right: 50px; border: 0 solid yellow;}
+#footer-login-header{padding-bottom: 10px; border-bottom: 1px solid grey;}
+#footer-login-body{padding-top: 10px; display: flex; justify-content:  space-around; border: 0 solid grey; }
+#footer-login-btn{width: 87%; }
+#BTN_export{background-color: #E5E5E5; color: black; border: 1px solid white ; border-radius: 0%; width: 70px; height : 30px;}
+
+
+
+
+
+
+
+/* MOBILE FIRST 1200px */
+@media only screen and (max-width: 1200px) {
+
+  .hero{display: block;  width: 100%; height: auto; border: 0px solid white; }
+
+  .box-info{width: 45%; margin: 10px auto; text-align: left; border: 3px solid red; }
+  .box-video{width: 45%; margin: 0px auto; text-align: center; border: 3px solid #007BFF;}
+
+
+
+}
+
+/* MOBILE FIRST 767px */
+
+@media only screen and (max-width: 767px) {
+  #box-creditsBtn{text-align: center; padding: 5px;}
+}
+
+
+
+
+
+
+/* ANIMATION - RED BAR BLINK */
+
+.bg-alert {
+  font-weight: bold;
+  background-color: red;
+  /* animation-name: allarme;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; */
+  animation : allarme 1s infinite;  /* forma contratta // shorthand */
+}
+
+@keyframes allarme {
+  0% {                      /* animation start */
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0
+  }
+
+
+  100% {                  /* animation end */
+    opacity: 1;
+  }
+}
